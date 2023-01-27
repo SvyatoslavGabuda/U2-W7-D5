@@ -245,27 +245,32 @@ const showBtn = document.getElementById("show");
 const ordina = function () {
   const sorted = caricate.sort((a, b) => a.rank - b.rank);
   const alerts = document.getElementById("alerts");
+
   const btn = document.createElement("button");
 
   btn.classList.add("btn");
   btn.classList.add("btn-danger");
+  btn.classList.add("m-3");
 
   const nascondi = function () {
-    console.log("qualcosa");
     alerts.classList.add("d-none");
   };
+  btn.addEventListener("click", nascondi);
 
   btn.innerText = "nascondi";
 
-  btn.addEventListener("click", nascondi);
-
   alerts.appendChild(btn);
   sorted.forEach((el) => {
-    alerts.innerHTML += `
-    <div class="alert alert-danger" role="alert">
-        N° ${el.rank} --- ${el.title}
-        
-      </div>`;
+    const div = document.createElement("div");
+    div.innerText = `N° ${el.rank} --- ${el.title}`;
+    div.classList.add("alert");
+    div.classList.add("alert-danger");
+    alerts.appendChild(div);
+    // alerts.innerHTML += `
+    //     <div class="alert alert-danger" role="alert">
+    //     N° ${el.rank} --- ${el.title}
+
+    //     </div>`;
   });
 };
 oldestBtn.onclick = ordina;
