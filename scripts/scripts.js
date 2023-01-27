@@ -48,7 +48,7 @@ const bestSong = function (img, titolo, album, artista, preview, link) {
 };
 const addToCarusel = function (img) {
   const contenitoreCarusel = document.getElementById("elementiCarusel");
-  contenitoreCarusel.innerHTML += `<div class="carousel-item active">
+  contenitoreCarusel.innerHTML += `<div class="carousel-item">
     <img src=${img} class="d-block w-100" alt="album" />
    
   </div>`;
