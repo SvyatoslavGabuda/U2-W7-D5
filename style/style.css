@@ -1,0 +1,68 @@
+header nav {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  color: rgb(243, 243, 243);
+}
+header nav a {
+  color: rgb(243, 243, 243) !important;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  color: rgb(243, 243, 243);
+  font-weight: 600;
+}
+
+main {
+  background-image: radial-gradient(circle, #0b50aa, #9545a5, #d93b81, #f5584f, #eb8c12);
+}
+main div.col div.card {
+  background-image: linear-gradient(to left, #050c37, #59314b, #8d6867, #b4a69b, #e3e3e2);
+  border-radius: 50px 5px 50px 5px;
+  overflow: hidden;
+  border: none;
+}
+main div.col div.card div.card-body {
+  position: relative;
+}
+main div.col div.card div.card-body .audio {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 1200px) {
+  main div.col div.card div.card-body .audio {
+    transform: scale(0.7) translate(-50px);
+  }
+}
+@media screen and (max-width: 300px) {
+  main div.col div.card div.card-body .audio {
+    transform: scale(0.6) translate(-120px);
+  }
+}
+main aside #best div.card {
+  border: 10px ridge red;
+  border-radius: 5px 50px 50px 5px;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  color: rgb(243, 243, 243);
+  overflow: hidden;
+}
+@media screen and (max-width: 400px) {
+  main aside #best div.card audio {
+    transform: scale(0.8) translate(-100px);
+  }
+}
+@media screen and (max-width: 300px) {
+  main aside #best div.card audio {
+    transform: scale(0.6) translate(-150px);
+  }
+}
+
+#alerts {
+  background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */

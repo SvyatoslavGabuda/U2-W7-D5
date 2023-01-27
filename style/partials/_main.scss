@@ -1,0 +1,53 @@
+main{
+    background-image: $gradient2;
+    div.col{
+        div.card{
+            background-image: $gradient1;
+            border-radius: 50px 5px 50px 5px;
+            overflow: hidden;
+            border: none;
+            div.card-body{
+                position: relative;
+            .audio{
+                transform: scale(0.9);
+                @media screen and (max-width:1200px) {
+                    transform: scale(0.7) translate(-50px);
+                    
+                }
+                @media screen and (max-width:300px) {
+                    transform: scale(0.6) translate(-120px);
+                    
+                }
+                
+
+            }
+        }
+        }
+    }
+    aside{
+        #best {
+            div.card{
+                border: 10px ridge red;
+                border-radius: 5px 50px 50px 5px;
+                background-image: $gradient;
+                color: $colorText3;
+                overflow: hidden;
+                audio{
+                    @media screen and(max-width:400px) {
+                        transform: scale(0.8) translate(-100px);
+                        
+                    }
+                    @media screen and(max-width:300px) {
+                        transform: scale(0.6) translate(-150px);
+                        
+                    }
+                }
+                
+            }
+
+        }
+    }
+}
+#alerts{
+    background-image: $gradientR;
+}
